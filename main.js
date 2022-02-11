@@ -13,14 +13,30 @@ Modified: 12/06/21
 function button1Clicked() {
     console.log("Button 1 was clicked"); 
 
-    let button1 = document.getElementById("button1");
-    button1.innerHTML = newText();
+    let text = document.getElementById("random_num");
 
-    let randNum = Math.random();
+    let randNum = Math.random() * 100;
     console.log(randNum);
+
+    text.innerHTML = randNum;
+
 }
 
 function button2Clicked() {
+    console.log("Button 2 was clicked");
+
+
+    // Get svg class
+    let curr_color = document.getElementById("c").getAttribute("class"); 
+
+    // Change color 
+    if (curr_color == "blue") {
+        document.getElementById("c").setAttribute("class", "green"); 
+    } else {
+        document.getElementById("c").setAttribute("class", "blue"); 
+    }
+    
+
     //If the circle is blue, clicking Button 2 should make it green. 
     //If the circle is green, clicking Button 2 should make it blue. 
     //You may use CSS or inline styling to achieve this functionality.    

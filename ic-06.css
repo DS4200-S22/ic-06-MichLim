@@ -7,8 +7,16 @@
     flex-direction: row;
  }
 
- .button { 
+ .button2 { 
     margin-top: 40px;
     height: 20px; 
     width: 100px; 
-    } 
+} 
+
+.blue {
+        fill: #a6cee3;
+}
+    
+.green {
+        fill: #b2df8a; 
+}
